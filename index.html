@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ModaMeny – Tienda de ropa</title>
+<meta name="theme-color" content="#111827">
+<meta name="description" content="Tienda de playeras, suéteres y más. Funciona sin conexión.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <h1>👕 ModaMeny</h1>
+  <input id="q" type="search" placeholder="Buscar prenda…" aria-label="Buscar">
+  <button id="install" hidden>⬇ Instalar</button>
+  <button id="cartBtn" aria-label="Abrir carrito">🛒 <span id="count">0</span></button>
+</header>
+<div id="offline" hidden>Sin conexión: usando contenido guardado.</div>
+<nav id="chips" aria-label="Categorías"></nav>
+<main><div id="grid"></div><p id="empty" hidden>No hay resultados.</p></main>
+<aside id="cart" aria-hidden="true">
+  <div class="top"><h2>Tu carrito</h2><button id="close" aria-label="Cerrar">✕</button></div>
+  <div id="items"></div>
+  <div class="foot"><p>Total: <strong id="total">$0</strong></p>
+  <button id="buy" class="primary">Finalizar compra</button>
+  <button id="clear">Vaciar</button></div>
+</aside>
+<div id="toast" role="status"></div>
+<footer>iPhone: Compartir → «Añadir a pantalla de inicio». Android/PC: botón «Instalar».</footer>
+<script src="js/app.js"></script>
+</body>85552
+.3
+</html>
